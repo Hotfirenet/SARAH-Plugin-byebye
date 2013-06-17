@@ -1,0 +1,16 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulevolume" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulevolume" scope="public">
+    <example>Sarah bonne nuit</example>
+    <tag>out.action=new Object(); </tag>
+    <item weight="2">Sarah</item>
+    <one-of>
+      <item>bonne nuit<tag>out.action.soundValue="veille"</tag></item>
+      <item>a bientot<tag>out.action.soundValue="veille"</tag></item>
+      <item>mets toi en veille<tag>out.action.soundValue="veille"</tag></item>
+      <item>shutdown<tag>out.action.soundValue="veille"</tag></item>
+      <item>dodo<tag>out.action.soundValue="veille"</tag></item>
+    </one-of>
+	
+<tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/byebye";</tag>
+  </rule>
+</grammar>

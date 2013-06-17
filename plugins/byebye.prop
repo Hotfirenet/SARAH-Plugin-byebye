@@ -1,0 +1,8 @@
+{
+  "modules": { 
+    "byebye": {
+      "description": "",
+      "version": "1.0"
+    }
+  }
+}
